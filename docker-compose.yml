@@ -11,6 +11,7 @@ services:
       - 80:80
     volumes:
       - ./:/var/www
+      - ./log/nginx/:/var/log/nginx/
     links:
       - fpm
 
